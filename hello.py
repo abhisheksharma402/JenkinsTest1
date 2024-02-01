@@ -5,3 +5,6 @@ for i in range(1,5):
         print("*",end=" ")
 
     print("",end='\n')
+
+print("hello")
+
