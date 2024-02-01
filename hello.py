@@ -7,4 +7,5 @@ for i in range(1,5):
     print("",end='\n')
 
 print("hello")
+print("hello")
 
