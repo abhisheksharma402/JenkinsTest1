@@ -4,7 +4,7 @@ pipeline{
   stages {
     stage('Clone git'){
       steps{
-        git "https://github.com/abhisheksharma402/JenkinsTest1.git"
+        git clone "https://github.com/abhisheksharma402/JenkinsTest1.git"
         
       }
       
@@ -18,7 +18,7 @@ pipeline{
     }
     stage('test code'){
       steps{
-        sh "u+x test.py"
+        sh "chmod u+x test.py"
         sh "./test.py"
       }
       
