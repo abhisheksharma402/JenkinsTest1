@@ -2,24 +2,24 @@ pipeline{
   agent any
 
   stages {
-    stage('build'){
+    stage('Clone git'){
       steps{
-        echo "building the application"
+        gut "https://github.com/abhisheksharma402/JenkinsTest1.git"
         
       }
       
     }
-    stage('test'){
+    stage('Build Code'){
       steps{
-        echo "testing the application"
-        
+        sh "chmod u+x prog.py"
+        sh "./prog.py"
       }
       
     }
-    stage('deploy'){
+    stage('test code'){
       steps{
-        echo "deploying the application"
-        
+        sh "u+x test.py"
+        sh "./test.py"
       }
       
     }
