@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Build Code') {
             steps {
-                sh "chmod u+x prog.py"
+                sh "chmod 777 prog.py"
                 sh "./prog.py"
             }
         }
